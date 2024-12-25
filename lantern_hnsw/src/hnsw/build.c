@@ -537,7 +537,7 @@ static void BuildIndex(Relation heap, Relation index, IndexInfo *indexInfo, ldb_
                  index,
                  buildstate->usearch_index,
                  estimated_row_count,
-                 "index size exceeded maintenance_work_mem during index construction, consider increasing"
+                 "index size exceeded maintenance_work_mem during index construction, consider increasing "
                  "maintenance_work_mem");
 
         usearch_reserve(buildstate->usearch_index, estimated_row_count, &error);
